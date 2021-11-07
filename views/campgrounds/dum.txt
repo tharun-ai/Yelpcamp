@@ -1,0 +1,14 @@
+</div>
+<h1>Edit Comment</h1>
+        <form action="/campgrounds/<%=camp._id%>?_method=PUT" method="POST">
+            <div>
+            <label for="title">title</label>
+            <input type="text" id="title" name="campground[title]" value="<%=camp.title%>">
+            </div>
+            <div>
+            <label for="location">Location</label>
+            <input type="text" id="location" name="campground[location]" value="<%=camp.location%>">
+            </div>
+            <button>Submit</button>
+            <a href="/campgrounds">See All camps</a>
+        </form>
